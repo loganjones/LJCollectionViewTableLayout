@@ -3,7 +3,7 @@ LJCollectionViewTableLayout
 
 Custom UICollectionViewLayout for displaying items in a two dimensional data table (rows & columns).
 
-![alt text](https://raw.github.com/loganjones/LJCollectionViewTableLayout/Image.png "Screenshot")
+![alt text](https://github.com/loganjones/LJCollectionViewTableLayout/blob/master/Image.png "Screenshot")
 
 
 
@@ -32,7 +32,8 @@ If your collectionView comes from a nib or storyboard then the layout class can 
 Now you're ready for some data! LJCollectionViewTableLayout extends the dataSource protocol to ask for two key values:
 - number or rows
 - number of columns
-This is in addition to the normal collectionView:numberOfItemsInSection: method which is still required. The value returned here *must* match the number of row * number of columns. If it doesn't, the resulting behavior is undefined and your device may or may not turn evil. LJCollectionViewTableLayout includes a helper method to calculate the number of items for you but it's not strictly necessary.
+
+This is in addition to the normal collectionView:numberOfItemsInSection: method which is still required. The value returned here *must* match the number of rows * number of columns. If it doesn't, the resulting behavior is undefined and your device may or may not turn evil. LJCollectionViewTableLayout includes a helper method to calculate the number of items for you but it's not strictly necessary.
 
 ```objective-c
 
