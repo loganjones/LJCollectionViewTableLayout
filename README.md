@@ -3,7 +3,7 @@ LJCollectionViewTableLayout
 
 Custom UICollectionViewLayout for displaying items in a two dimensional data table (rows & columns).
 
-![alt text](https://github.com/loganjones/LJCollectionViewTableLayout/blob/master/Image.png "Screenshot")
+![ScreenShot](Image.png "Screenshot")
 
 
 
@@ -37,16 +37,21 @@ This is in addition to the normal collectionView:numberOfItemsInSection: method 
 
 ```objective-c
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section {
     return [LJCollectionViewTableLayout numberOfItemsForTableWithColumnCount:numberOfColumns
                                                                     rowCount:numberOfRows];
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout numberOfRowsForTableInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+                     layout:(UICollectionViewLayout *)collectionViewLayout
+numberOfRowsForTableInSection:(NSInteger)section {
     return numberOfRows;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout numberOfColumnsForTableInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+                     layout:(UICollectionViewLayout *)collectionViewLayout
+numberOfColumnsForTableInSection:(NSInteger)section {
     return numberOfColumns;
 }
 
